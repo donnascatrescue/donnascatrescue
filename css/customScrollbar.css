@@ -1,0 +1,37 @@
+.custom-scrollbar {
+    position: relative;
+    width: calc(100% - 2px); /* Adjusted for 1px border on each side */
+    height: 80vh; 
+    overflow-y: auto; /* Enable vertical scrollbar */
+    border: 1px solid #eee;
+}
+
+.content {
+    padding: 10px;
+    bottom: 0;
+}
+
+.scroll-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(0); /* Initial position */
+    transition: transform 0.3s ease;
+}
+
+.scroll-icon img {
+    width: 80px;
+    height: auto;
+}
+
+#catTemp {
+    width: 0%;
+    height: 0%;
+}
+
+#catTemp img {
+    width: 0%;
+    height: 0%;
+}
+
+

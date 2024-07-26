@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header, footer {
+    background-color: #748174;
+    color: #DDDFDF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    border-bottom: 10px solid #596259;
+}
+
+footer {
+    position: absolute;
+}
+
+header h1, footer h1 {
+    padding-left: 10px;
+    margin: 0;
+    font-size: 3em;
+}
+
+footer a {
+    font-size: 1.5em;
+    color: #DDDFDF;
+}
+
+footer a:hover {
+    color: #000000;
+}
+
+ul {
+    width: 100%;
+    margin: 0;
+}
+
+li {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    transition: color 0.25s ease, background-color 0.25s ease;
+    padding: 10px 0;
+    color: #DDDFDF;
+}
+
+li a:hover {
+    color: #000000;
+    background-color: white;
+}
+
+@media (max-width:1300px){
+    header {
+        background-image: url(../images/nav/medium.jpg);
+    }
+    li {
+        justify-content: center;
+    }
+    li a {
+        flex-grow: unset;
+        margin: 0 50px;
+        width: auto;
+        background-color: #ee6c4d;
+        border-radius: 100px;
+        padding: 10px 20px;
+    }
+    li a:hover {
+        background-color: #ea876e;
+    }
+    
+}
+
+@media (max-width:700px){
+    header {
+        background-image: url(../images/nav/small.jpg);
+    }
+    li {
+        width: 80%;
+        
+    }
+    li a {
+        margin: 0 25px;
+    }
+}
+
+@media (max-width:600px){
+    header {
+        align-items: center;
+    }
+    header h1, footer h1 {
+        font-size: 2.5em;
+    }
+    footer a {
+        font-size: 1.2em;
+    }
+    li a{
+        margin: 0 5px;
+    }
+}
+
+/*Mainly just for the footer to stop widget overlap*/
+@media (max-width:500px){
+    footer h1, footer a {
+        margin-left: auto;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:400px){
+    header h1, footer h1 {
+        font-size: 2em;
+    }
+    footer a {
+        font-size: 1em;
+    }
+    li a{
+        margin: 0;
+    }
+}
+
+@media (max-width:350px){
+    li a{
+        font-size: 1.3em;
+    }
+}

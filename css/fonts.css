@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif; /* Default font for body text */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Ensures bold weight is used */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* Ensures bold weight is used */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', cursive;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; /* Ensures bold weight is used */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; /* Ensures bold weight is used */
+}
