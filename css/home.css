@@ -12,6 +12,7 @@ p {
     top: 0;
     bottom: 0;
     width: 100%;
+    height: auto;
     background-image: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,6 +84,35 @@ p {
     background-image: url('../images/gallery/13S.jpg');
 }
 
+#hiddenAdoptInfo {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+#hiddenAdoptInfo p {
+    font-size: 0%;
+}
+
+@media (max-width:1555px){
+    #adoptInfo, #image3 {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    #adoptInfo p {
+        font-size: 0%;
+    }
+    #hiddenAdoptInfo {
+        visibility: unset;
+        width:70%;
+        height: auto;
+    }
+    #hiddenAdoptInfo p {
+        font-size: 1.5em;
+    }
+}
+
 @media (max-width:1000px){
     p {
         font-size: 1.2em;
@@ -112,7 +142,29 @@ p {
     }
     .imageFlexer {
         flex-direction: row;
-        width: 90%;
+        width: 95%;
         justify-content: space-between;
+    }
+
+    #adoptInfo {
+        visibility: visible;
+        height: auto;
+        width: 95%;
+    }
+    #adoptInfo p {
+        font-size: 1.5em;
+    }
+    #image3 {
+        visibility: visible;
+        height: 200px;
+        width: 30%;
+    }
+    #hiddenAdoptInfo {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    #hiddenAdoptInfo p {
+        font-size: 0%;;
     }
 }
